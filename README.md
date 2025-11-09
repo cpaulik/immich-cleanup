@@ -12,9 +12,9 @@ A Python toolkit for managing and cleaning up photo stacks in Immich, a self-hos
 
 ## Scripts
 
-### `main.py`
+### `stack_primary_asset_lowest_resolution.py`
 
-Analyzes and updates stack primary assets to use the lowest resolution image as primary, which is optimal for storage efficiency.
+Analyzes and updates stack primary assets to use the lowest resolution image as primary, which is optimal if you've cropped a lot.
 
 ### `detect_duplicates.py`
 
@@ -71,7 +71,7 @@ IMMICH_BASE_URL="http://your-immich-server:2283"
 Run each script individually:
 
 ```bash
-uv run main.py
+uv run stack_primary_asset_lowest_resolution.py
 uv run detect_duplicates.py
 uv run check_album_stacks.py
 uv run remove_single_asset_stacks.py
@@ -93,4 +93,3 @@ uv run order_albums.py
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 This project is not affiliated with Immich. Use at your own risk.
-
